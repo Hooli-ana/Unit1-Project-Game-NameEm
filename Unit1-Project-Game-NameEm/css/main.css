@@ -1,0 +1,102 @@
+
+body {
+  margin: 0px;
+  max-width: 100%;
+  background-color: red;
+}
+.testDiv {
+  max-width: 100%;
+  background-color: black;
+}
+#headerContainer {
+  max-width: cover;
+  margin: 0px;
+
+}
+header {
+  max-width: 100%;
+  max-height: 500px;
+  margin-top: 0px;
+}
+nav .menu {
+  display: inline-block;
+
+}
+nav .menu .menu-inner {
+  display: inline-block;
+}
+.menu-inner li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+}
+#bigContainer {
+  padding: 0px;
+
+}
+h1 {
+  color: white;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+h3 {
+  margin: 5px;
+  font-size: 20px;
+}
+
+#gameRow {
+  /*max-width: 100%;*/
+  /*padding-left: 50px;*/
+}
+.person {
+  max-width: 150px;
+  min-height: 150px;
+  background-color: black;
+  border-style: solid;
+  border-width: thick;
+  border-color: black;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.pic img {
+  max-width: 140px;
+  min-height: 120px;
+  background-color: black;
+}
+
+#twoColList {
+  /*column-count:2;*/
+]  column-gap: 30px;
+  list-style-position: inside;
+  /*padding-left: 14px;*/
+}
+
+.col-md-2 {
+  padding:0px;
+}
+.name {
+  max-width: 125px;
+  align-self: center;
+}
+#gallery {
+  padding: 0px;
+  padding-top: 20px;
+}
+.rightColumn {
+  padding-left: 50px;
+  color: black;
+}
+#instructions {
+  padding: 5px;
+  background-color: white;
+  margin-top: 20px;
+}
+#logo {
+  max-width: 150px;
+  min-height: 150px;
+}
+.nameList li {
+  font-size: 16px;
+
+}
