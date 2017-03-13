@@ -1,0 +1,135 @@
+
+body {
+  margin: 0px;
+  max-width: 100%;
+  background-color: red;
+  font-family: 'Permanent Marker', cursive;
+}
+.testDiv {
+  max-width: 100%;
+  background-color: black;
+}
+#headerContainer {
+  max-width: cover;
+  margin: 0px;
+
+}
+header {
+  max-width: 100%;
+  /*max-height: 500px;*/
+  margin-top: 0px;
+}
+nav .menu {
+  display: inline-block;
+
+}
+nav .menu .menu-inner {
+  display: inline-block;
+}
+.menu-inner li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px 5px;
+  color: white;
+  font-size: 16px;
+}
+#bigContainer {
+  padding: 0px;
+
+}
+h1 {
+  color: white;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: 'Caveat', cursive;
+}
+h3 {
+  margin: 5px;
+  font-size: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#gameRow {
+  /*max-width: 100%;*/
+  /*padding-left: 50px;*/
+}
+.person {
+  max-width: 130px;
+  min-height: 130px;
+  background-color: white;
+  border-style: solid;
+  border-width: thick;
+  border-color: white;
+  margin-bottom: 10px;
+  /*margin-right: 5px;*/
+}
+.pic img {
+  max-width: 120px;
+  min-height: 100px;
+  background-color: white;
+}
+#logo {
+  max-width: 120px;
+  min-height: 100px;
+  background-color: white;
+}
+.answer{
+  margin-left: 5px;
+  max-width: 110px;
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
+}
+#twoColList {
+  column-count:2;
+  column-gap: 30px;
+  list-style-position: inside;
+  padding-left: 14px;
+}
+.col-md-2 {
+  padding:0px;
+}
+#gallery {
+  padding: 0px;
+  padding-top: 20px;
+}
+.rightColumn {
+  /*padding-left: 50px;*/
+  color: black;
+  padding-left: 40px;
+}
+#instructions {
+  padding: 5px;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.nameList li {
+  font-size: 18px;
+}
+
+.submit{
+  background-color: green;
+  text-align: center;
+  color: white;
+  font-family: 'Caveat', cursive;
+  /*padding: 10px 20px;*/
+}
+.scoreArea{
+  padding: 5px;
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  border-width: thick;
+  margin-left: 10px;
+  min-height: 80px;
+}
+.scoreA  {
+  display: inline;
+}
+footer {
+  min-height: 15px;
+  background-color: gray;
+  /*margin-bottom: 0px;*/
+}
