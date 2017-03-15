@@ -69,10 +69,20 @@ h3 {
   min-height: 100px;
   background-color: white;
 }
+.logo {
+  max-width: 130px;
+  min-height: 130px;
+  background-color: white;
+  border-style: solid;
+  border-width: thick;
+  border-color: white;
+  margin-bottom: 10px;
+}
 #logo {
   max-width: 120px;
-  min-height: 100px;
+  min-height: 130px;
   background-color: white;
+  position: absolute;
 }
 .answer{
   margin-left: 5px;
