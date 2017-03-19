@@ -34,7 +34,20 @@ $('form').submit(function () {
 $('#tbJorge').css('background-color', 'red')
     //no points and
   };
+  var answersPlayer1=[];
+      $("#form").submit(function(event) {
+          console.log($(this).serializeArray());
+          answersPlayer1=$(this).serializeArray();
+          // var answers =($(this).serializeArray());
+          event.preventDefault();
 
+          if ((($(".answer").val()) ===  ($(".answer").attr("name"))).each(function() {
+              $(".answer").css('background-color', 'green')
+              } else {
+              $(".answer").css('background-color', 'red')
+          })
+      })
+  });
 
 
 
