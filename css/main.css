@@ -2,25 +2,29 @@
 body {
   margin: 0px;
   max-width: 100%;
+  min-height: 100%;
   background-color: red;
   font-family: 'Permanent Marker', cursive;
 }
 .testDiv {
   max-width: 100%;
+  max-height: 80px;
   background-color: black;
 }
-#headerContainer {
+/*#headerContainer {
   max-width: cover;
   margin: 0px;
 
-}
+}*/
 header {
   max-width: 100%;
   /*max-height: 500px;*/
   margin-top: 0px;
+  display: inline;
 }
 nav .menu {
   display: inline-block;
+
 
 }
 nav .menu .menu-inner {
@@ -29,7 +33,7 @@ nav .menu .menu-inner {
 .menu-inner li {
   list-style-type: none;
   display: inline-block;
-  padding: 15px 5px;
+  padding: 0px 15px;
   color: white;
   font-size: 16px;
 }
@@ -44,10 +48,10 @@ h1 {
   font-family: 'Caveat', cursive;
 }
 h3 {
-  margin: 5px;
+  margin: 0px 0px 5px 0px;
   font-size: 20px;
-  padding-top: 10px;
   text-align: center;
+  text-decoration: underline;
 }
 
 #gameRow {
@@ -114,34 +118,47 @@ h3 {
   padding-top: 20px;
 }
 .rightColumn {
-  /*padding-left: 50px;*/
   color: black;
   padding-left: 40px;
+  padding-right: 0px;
 }
 #instructions {
-  padding: 5px;
-  margin-top: 0px;
+  /*padding: 5px;*/
+  margin-top: 10px;
   margin-left: 10px;
+  padding-top: 10px;
 }
-
+#instructions p {
+  font-size: 16px;
+}
 .nameList li {
-  font-size: 18px;
+  font-size: 20px;
 }
-
-.scoreArea{
-  padding: 5px;
+.scoreArea h3 {
+  padding: 0px;
+  text-decoration: underline;
+}
+.score{
+  padding: 0px 5px;
   background-color: white;
   border-color: black;
   border-style: solid;
   border-width: thick;
   margin-left: 10px;
-  min-height: 80px;
+  min-height: 70px;
+  min-width: 150px;
+  display: inline-block;
 }
-.scoreA  {
-  display: inline;
+
+#player {
+  text-decoration: underline;
 }
 footer {
   min-height: 15px;
   background-color: gray;
-  /*margin-bottom: 0px;*/
+  margin-bottom: 0px;
 }
+/*.footer {
+  max-width: 100%;
+  position: absolute;
+}*/

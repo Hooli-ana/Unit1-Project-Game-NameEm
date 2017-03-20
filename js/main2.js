@@ -10,6 +10,7 @@ var textbox=['#tbMattT', '#tbSam','#tbRob', '#tbBarbara', '#tbPeter', '#tbSarah'
 
 
 var userAnswers= [];
+var answersPlayer1=[];
 
 //have to create player 1 and player 2
 var cohort=[];
@@ -27,30 +28,45 @@ console.log(cohort);
       //make person card
 
 
-$('form').submit(function () {
-  if ($("#tbjorge").val() == 'Jorge') {
-    $('#tbJorge').css('background-color', 'green')
-  } else {
-$('#tbJorge').css('background-color', 'red')
-    //no points and
-  };
-  var answersPlayer1=[];
-      $("#form").submit(function(event) {
-          console.log($(this).serializeArray());
-          answersPlayer1=$(this).serializeArray();
-          // var answers =($(this).serializeArray());
-          event.preventDefault();
 
-          if ((($(".answer").val()) ===  ($(".answer").attr("name"))).each(function() {
-              $(".answer").css('background-color', 'green')
-              } else {
-              $(".answer").css('background-color', 'red')
-          })
+  $("#form").submit(function(event) {
+      console.log($(this).serializeArray());
+      answersPlayer1=$(this).serializeArray();
+      // var answers =($(this).serializeArray());
+      event.preventDefault();
+
+      $(this).find('input.answer').each(function(index, element){
+        console.log('element: ',element);
+        console.log('index: ', index);
+        console.log('attribute: ', $(element).attr('name'));
+
+        if($(element).val() === $(element).attr('name')){
+          $(element).css('background-color', 'green')
+          } else {
+          $(element).css('background-color', 'red')
+          }
+
       })
-  });
 
 
+  })
 
+
+  //values is new array or values=array[]
+
+          // if (($(".answer").val()) === ( $(".answer").attr("name"))) {
+          //     $(this).css('background-color', 'green')
+          // } else {
+          //     $(this).css('background-color', 'red')
+          // }
+
+          // if ((($(".answer").val()) ===  ($(".answer").attr("name"))).each(function() {
+          // $(".answer").css('background-color', 'green')
+          // } else {
+          // $(".answer").css('background-color', 'red')
+          // })
+          // prog1?? of progn to execute 2 blocks code for 1 if statement
+          //     jorge
 
 // var x = document.createElement("input");
 // x.setAttribute("type", "text" )
@@ -83,3 +99,4 @@ $('#tbJorge').css('background-color', 'red')
 //
 // does name typed in equal person name
 // })
+});

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Name Them</title>
+    <title>Name Themeeeee</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Caveat|Gochi+Hand|Over+the+Rainbow|Permanent+Marker|Rock+Salt|Walter+Turncoat" rel="stylesheet">
@@ -11,23 +11,22 @@
   <!--link bootstrap-->
   <body>
     <div class="testDiv">
-    <div class="container" id="headerContainer">
-      <header class="row">
-        <div class="column1 col-md-9">
-          <h1>Name 'Em</h1>
-        </div>
-        <div class=" column1 col-md-3">
-          <nav class="menu">
-            <ul class="menu-inner">
-              <li>Home</li>
-              <li>New Game</li>
-              <li>About</li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <div class="container" id="headerContainer">
+        <header class="row">
+          <div class="column1 col-md-9">
+            <h1>Name 'Em</h1>
+          </div>
+          <div class=" column1 col-md-3">
+            <nav class="menu">
+              <ul class="menu-inner">
+                <li>Home</li>
+                <li>About</li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
     </div>
-  </div>
 
       <!--Big Container-->
     <div class="container" id="bigContainer">
@@ -38,11 +37,11 @@
       <div class="row" id="gameRow">
         <!-- IMAGES -->
         <div class="col-md-8" id="gallery">
+          <form name="gameAnswers" method="post"  id="form" class="preventSubmit" onsubmit="">
           <div class="row" id="picRow">
             <!--first column of pics -->
             <div class="col-md-2">
       <!-- FORM created to evaluate answers -->
-        <form name="gameAnswers" method="post" onsubmit="" id="form">
               <div class="person" id="person1">
                 <div class="pic">
                   <img src="images/jorge.jpg">
@@ -157,7 +156,7 @@
                 <div class="pic">
                   <img src="images/andrew.jpg">
                 </div>
-                <input type="text" class="answer" id="tbAndrew" name="Andrew" placeholder="Name"/>
+                <input type="text" class="answer" id="tbAndrew" data-name="Andrew" placeholder="Name"/>
               </div>
             </div>
             <!--fifth column of pics -->
@@ -183,7 +182,7 @@
               </div>
 <!--ADD IN JULI IC -->
               <div class="person" id="person20">
-                <div class="pic"><img src="images/.jpg"></div>
+                <div class="pic"><img src="images/juli.jpg"></div>
                 <input type="text" class="answer" id="tbJuli" name="Juli" placeholder="Name"/>
               </div>
             </div>
@@ -216,20 +215,20 @@
                 <div class="pic">
                   <img src="images/ga_logo_sm.jpg" id="logo">
                 </div>
-                <input
-                 class="submit" type="submit"  id="submit"></input>
-                </form>
+                <button
+                 class="submit" type="submit"  id="submit">SUBMIT</button>
               </div>
             </div>
 
           </div>
+        </form>
         </div>
 
         <!-- List of names -->
         <div class="rightColumn col-md-4" >
           <div id="instructions">
             <h3>Instructions</h3>
-            <p>Can you name everyone in your class? Type each person's name under his/her photo and see if you can name 'em all. Then click on the name of your cohort to see if you can beat your partner's score.</p>
+            <p>Can you name everyone in your class? Type each person's name under his/her photo and see if you can name 'em all. Then click on submit and see if you can beat your partner's score.</p>
           </div>
           <div class="namesArea">
             <h3>List of Names</h3>
@@ -262,28 +261,30 @@
               <li>Erik</li>
             </ol>
           </div>
-        <!--submit area/score -->
-            <!-- <div class="submitArea">
-              <button class="submit" type="submit">Submit</button>
-            </div> -->
-            <br />
+
 
           <div class="scoreArea">
-            <div class="score" id="player1">
-              <h3>Player 1:</h3>
+            <h3>Score</h3>
+            <div class="score">
+                <div id="player1">
+                  <p id="player">Player 1:</p>
+                  <div id="scoreP1"></div>
+                </div>
             </div>
-            <div class="score" id="player2">
-              <h3>Player 2:</h3>
+            <div class="score">
+                <div id="player2">
+                  <p id="player">Player 2:</p>
+                  <div id="scoreP2"></div>
+                </div>
             </div>
-
           </div>
 
+        </div><!-- This closes right Column -->
+      </div> <!-- This closes gamerow-->
+      </div> <!-- This closes the big container-->
 
-        </div>
-      </div>
-    </div>
 
-    <!-- <footer></footer> -->
+    <!-- <footer class="footer">Created by Juliana M.</footer> -->
 
 
     <!--link jquery externaly too??? backup-->
