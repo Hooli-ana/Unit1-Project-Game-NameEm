@@ -235,23 +235,3 @@ $(document).ready(function() {
 
     })
 });
-
-
-
-
-
-
-
-        // var values=[];
-        //     $('.answers').each(function(){
-        //     values[$(this).attr('name')] = $(this).val()
-        //     })
-        //     for(i=0; i<values.length; i++) {
-        //         if name[i] === val[i]
-        //     }
-        //
-        // output = "";
-        // for (property in values) {
-        //     output += property + ':'  + values[property]+ ' ;';
-        // }
-        // alert(output);

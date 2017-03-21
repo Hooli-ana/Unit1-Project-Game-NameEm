@@ -2,7 +2,8 @@ $(document).ready(function() {
 
 // variables that comprise a person object :
 //names of everyone, photos, text box,nameList
-var names = ['MattT', 'Sam','Rob', 'Barbara', 'Peter', 'Sarah', 'Salman', 'Jorge','Tanya', 'Ronak', 'Dan', 'Chris', 'Jacob','Juli','Remington','Jon', 'Andrew', 'Melissa', 'MattH','Charlie','Rene', 'Komal', 'Erik'];
+var names=['MattT', 'Sam','Rob', 'Barbara', 'Peter', 'Sarah', 'Salman', 'Jorge','Tanya', 'Ronak', 'Dan','Chris', 'Jacob','Juli','Remington','Jon', 'Andrew','Melissa', 'MattH','Charlie','Rene', 'Komal', 'Erik'];
+
 
 var pic = ['images/mattT.jpg','images/sam.jpg', 'images/rob.jpg','images/barbara.jpg', 'images/peter.jpg','images/sarah.jpg', 'images/salman.jpg','images/jorge.jpg', 'images/tanya.jpg', 'images/ronak.jpg','images/dan.jpg', 'images/chris.jpg', 'images/jacob.jpg','images/juli.jpg', 'images/remington.jpg','images/jon.jpg', 'images/andrew.jpg','images/melissa.jpg', 'images/mattH.jpg','images/charlie.jpg', 'images/rene.jpg', 'images/komal.jpg','images/erik.jpg'];
 
@@ -46,6 +47,33 @@ console.log(cohort);
           $(element).css('background-color', 'red')
           }
 
+          function score(){
+
+                  if (correct === totalNames) {
+                      alert("Congrats! You got all the names right!");
+                      $("#p")
+                  } else {
+                      alert("You got" + " " + correct + " " + "out of" + " " + totalNames + "correct!")
+                  }
+                  $("input, textbox").val("");
+                  $(".answer").css('background-color', 'white');
+              }
+
+        //can you listen for append correct?
+              function winner() {
+                  if (scorePlayer1 > scorePlayer2) {
+                      alert("Congrats Player 1, you won!");
+                  } else if
+                      (scorePlayer1 < scorePlayer2) {
+                      alert("Congrats Player 2, you won!");
+                  } else if
+                      (scorePlayer1 === scorePlayer2) {
+                      alert("uh oh..looks like we have a tie! Give it one more go!")
+                  }
+                  $("#scoreP1").text("");
+                  $("#scoreP2").text("");
+              }
+              // setTimeout(score, 900);
       })
 
 
